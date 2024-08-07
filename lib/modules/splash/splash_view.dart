@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 
+import '../../layout/layout_view.dart';
+
 class SplashView extends StatefulWidget {
   static const  String routeName="/";
   const SplashView({super.key});
@@ -14,7 +16,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     Timer(Duration(seconds: 2),() {
-      Navigator.pushReplacementNamed(context, "layout");
+      Navigator.pushReplacementNamed(context, LayoutView.routeName);
     }, );
     super.initState();
   }
